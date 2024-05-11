@@ -2,5 +2,14 @@
     <string name="app_name">Family Reunion</string>
     <string name="textview">New to FamilyReunionApp? <a href="">Create Account</a></string>
     <string name="textview2">By joining you agree to App’s <a href="">Term \u0026 Condition</a></string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 
 </resources>
