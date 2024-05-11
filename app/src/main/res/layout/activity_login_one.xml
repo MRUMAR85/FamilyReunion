@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_2"
+    >
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="392dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/curve_shape"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="279dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:text="     Welcome to FamilyReunionApp!"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="427dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="275dp"
+            android:layout_height="38dp"
+
+            android:layout_marginStart="50dp"
+            android:text="Start your family reunion journey with us. Connect\u0021      \t\t\tand plan memorable moments effortlessly."
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="68dp"
+            tools:layout_editor_absoluteY="526dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/round_corner_button"
+            android:text="Login to Account"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_button"
+                android:drawableLeft="@drawable/img_3"
+                android:text="Apple"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/round_corner_button"
+                android:drawableLeft="@drawable/img_4"
+                android:drawableBottom="@drawable/"
+                android:text="GOOGLE" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20sp"
+            android:text="@string/textview" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="221dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

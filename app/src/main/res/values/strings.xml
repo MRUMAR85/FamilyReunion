@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Family Reunion</string>
+    <string name="textview">New to FamilyReunionApp? <a href="">Create Account</a></string>
+    <string name="textview2">By joining you agree to App’s <a href="">Term \u0026 Condition</a></string>
+
+</resources>

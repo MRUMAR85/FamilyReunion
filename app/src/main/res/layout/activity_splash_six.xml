@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="285dp"
+        android:layout_height="241dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="118dp"
+        android:background="@drawable/s4"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="279dp"
+        android:layout_height="92dp"
+        android:text="     Collaborate with  \t\t\t\t\t\t\t Committees"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="288dp"
+        android:layout_height="53dp"
+        android:text="   Work together efficiently by creating committees. \t\Assign tasks, share to-do lists, and engage in group   \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t chats."
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="489dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="106dp"
+        android:layout_height="114dp"
+        app:srcCompat="@drawable/img"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="577dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
