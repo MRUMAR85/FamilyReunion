@@ -86,8 +86,8 @@
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="82dp"
-            android:layout_height="27dp"
+            android:layout_width="98dp"
+            android:layout_height="9dp"
             android:layout_marginStart="4dp"
             android:layout_marginTop="24dp"
             android:text="Remember me"
@@ -156,7 +156,6 @@
             android:layout_weight="1"
             android:background="@drawable/round_corner_button"
             android:drawableLeft="@drawable/img_4"
-            android:drawableBottom="@drawable/"
             android:text="GOOGLE"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button" />

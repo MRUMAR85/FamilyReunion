@@ -90,7 +90,6 @@
                 android:layout_weight="1"
                 android:background="@drawable/round_corner_button"
                 android:drawableLeft="@drawable/img_4"
-                android:drawableBottom="@drawable/"
                 android:text="GOOGLE" />
         </LinearLayout>
 

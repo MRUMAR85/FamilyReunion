@@ -1,5 +1,6 @@
 package com.example.familyreunion.splash
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.familyreunion.databinding.ActivitySplashFiveBinding
@@ -9,6 +10,8 @@ class SplashFiveActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashFiveBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        binding.imageView3.setOnClickListener {
+            startActivity(Intent(this, SplashSixActivity::class.java))
+        }
     }
 }

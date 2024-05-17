@@ -1,4 +1,4 @@
-<?xml version="1.0" encodfing="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,42 +10,52 @@
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="246dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="104dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="119dp"
         tools:srcCompat="@drawable/s2" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="279dp"
         android:layout_height="92dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="44dp"
         android:text="Stay Informed with \t\t\tAnnouncements"
         android:textColor="@color/black"
         android:textSize="32sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="406dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="276dp"
         android:layout_height="44dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="4dp"
         android:text="Receive timely updates and announcements about \tyour family reunion. Explore the latest news and \t\t\t\t\t\t\ \t\t\t\t\t\t\t\t events."
         android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="normal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="498dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="103dp"
         android:layout_height="121dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="16dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
         app:srcCompat="@drawable/img"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="556dp"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,42 +9,50 @@
         android:id="@+id/imageView"
         android:layout_width="285dp"
         android:layout_height="241dp"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="118dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="80dp"
         android:background="@drawable/s1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="279dp"
         android:layout_height="92dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="52dp"
         android:text="     Welcome to FamilyReunionApp!"
         android:textColor="@color/black"
         android:textSize="32sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="406dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="275dp"
         android:layout_height="38dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
         android:text="Start your family reunion journey with us. Connect\u0021      \t\t\tand plan memorable moments effortlessly."
         android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="normal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="498dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView33"
         android:layout_width="119dp"
         android:layout_height="103dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
         app:srcCompat="@drawable/img"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="564dp"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
