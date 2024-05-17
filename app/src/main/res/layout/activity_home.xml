@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.HomeActivity">
+
+    <FrameLayout
+        android:id="@+id/framelayoutHomeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/img_8"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="600dp"/>
+    </FrameLayout>
+
+
+    <!--        <com.google.android.material.bottomappbar.BottomAppBar-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            app:fabCradleMargin="10dp"/>-->
+    <!--        -->
+    <!--        -->
+    <!--
+   </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/fabMain"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="10dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/framelayoutHomeActivity"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom_nav_home_activity" />
+
+
+
+
+    <!--    <com.nightonke.boommenu.BoomMenuButton-->
+    <!--        android:id="@+id/boom_menu_button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_margin="20dp"-->
+    <!--        app:boom_inActionBar="false"-->
+    <!--        app:boom_button_color="@color/colorPrimary"-->
+    <!--        app:boom_button_pressed_color="@color/colorPrimaryDark" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="411dp"
+        android:layout_height="270dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/backhome">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="105dp"
+            android:layout_height="22dp"
+            android:layout_weight="1"
+            android:text="Welcome Back,"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/baseline_alternate_email_24"
+            tools:layout_editor_absoluteX="320dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
