@@ -1,4 +1,0 @@
-package fragment
-
-class HomeFragment {
-}

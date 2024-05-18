@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.familyreunion.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityHomeBinding
+    private lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -13,3 +13,4 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
     }
+}
