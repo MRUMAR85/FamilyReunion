@@ -13,13 +13,19 @@
         android:theme="@style/Theme.FamilyReunion"
         tools:targetApi="31">
         <activity
+            android:name=".activities.CommitteDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Adapter.RecyclerView.ChatAdapter"
+            android:exported="false" />
+        <activity
             android:name=".splash.SplashOneActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".splash.SplashTwoActivity"
@@ -33,6 +39,12 @@
         <activity
             android:name=".LoginOneActivity"
             android:exported="false" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.ChatActivity"
+            android:exported="true" />
 
     </application>
 
