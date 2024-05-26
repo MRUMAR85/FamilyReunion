@@ -3,30 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".splash.SplashFiveActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="285dp"
         android:layout_height="241dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="96dp"
         android:background="@drawable/s3"
         android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="279dp"
         android:layout_height="92dp"
-        android:layout_marginStart="68dp"
         android:layout_marginTop="28dp"
         android:text="@string/plan"
         android:textColor="@color/black"
         android:textSize="32sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="MissingConstraints,TextSizeCheck" />
@@ -35,12 +38,12 @@
         android:id="@+id/textView1"
         android:layout_width="288dp"
         android:layout_height="53dp"
-        android:layout_marginStart="68dp"
         android:layout_marginTop="12dp"
         android:text="@string/se"
         android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints,TextSizeCheck" />
@@ -49,11 +52,13 @@
         android:id="@+id/imageView3"
         android:layout_width="109dp"
         android:layout_height="115dp"
-        android:layout_marginStart="148dp"
         android:layout_marginTop="20dp"
         android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.128"
         app:srcCompat="@drawable/img"
         tools:ignore="MissingConstraints" />
 

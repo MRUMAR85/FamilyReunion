@@ -34,7 +34,7 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="confirm_new_password">Confirm New Password</string>
     <string name="committee_name">Committee Name</string>
-    <string name="write_message_here">Write message here...</string>
+    <string name="write_message_here">Write message here…</string>
     <string name="forgot_password">Forgot Password</string>
     <string name="select_verification_method_and_we_will_send_verification_code">Select verification method and we will send verification code</string>
     <string name="phone_number">Phone Number</string>
@@ -95,7 +95,7 @@
     <string name="comm">Committees</string>
     <string name="overview">Overview</string>
     <string name="family_reunion_an">Family Reunion Announcement at Restau..</string>
-    <string name="ok">ok</string>
+    <string name="ok">OK</string>
     <string name="_10_10_2000">10/10/2000</string>
     <string name="as">as</string>
     <string name="fam">Family Reunion Announcement at Restau..</string>
@@ -109,5 +109,6 @@
     <string name="upcoming_events">Upcoming Events</string>
     <string name="sep_29_2022_10_00_pm">Sep 29, 2022 . 10:00 PM</string>
     <string name="family_reunion_event">Family Reunion Event</string>
+    <string name="todoa">TODO</string>
 
 </resources>

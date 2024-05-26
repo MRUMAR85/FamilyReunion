@@ -8,7 +8,9 @@
     tools:context=".LoginTwoActivity"
     >
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="395dp"
         android:layout_height="392dp"
         android:background="@drawable/curve_shape"
@@ -18,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.982"
         tools:ignore="ExtraText,MissingConstraints,TextSizeCheck">
 
         /
@@ -29,10 +31,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
-
             android:background="@color/white"
             android:justificationMode="inter_word"
             android:text="@string/nail"
+            android:textColor="@color/black"
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -40,8 +42,9 @@
 
         <EditText
             android:id="@+id/input_field"
-            android:layout_width="367dp"
-            android:layout_height="42dp"
+            android:layout_width="339dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="18dp"
             android:layout_marginTop="44dp"
             android:background="@drawable/black_border_button"
             android:hint="@string/enter_email"
@@ -57,26 +60,27 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="19dp"
             android:layout_marginTop="64dp"
             android:autofillHints=""
             android:importantForAutofill="no"
             android:text="@string/p"
+            android:textColor="@color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             tools:ignore="MissingConstraints" />
 
         <EditText
             android:id="@+id/input_field1"
-            android:layout_width="375dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="358dp"
+            android:layout_height="51dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/black_border_button"
             android:hint="@string/enter"
             android:importantForAutofill="no"
             android:padding="10dp"
             android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_field"
             tools:ignore="TextFields" />
@@ -85,8 +89,8 @@
             android:id="@+id/radioButton"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="11dp"
             android:text=""
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_field1" />
@@ -95,9 +99,10 @@
             android:id="@+id/textView8"
             android:layout_width="99dp"
             android:layout_height="16dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="-18dp"
             android:layout_marginTop="28dp"
             android:text="Remember me"
+            android:textColor="@color/black"
             android:textSize="10sp"
             app:layout_constraintStart_toEndOf="@+id/radioButton"
             app:layout_constraintTop_toBottomOf="@+id/input_field1"
@@ -109,8 +114,11 @@
             android:layout_height="24dp"
             android:layout_marginStart="144dp"
             android:layout_marginTop="28dp"
+            android:layout_marginEnd="20dp"
             android:text="@string/forget_password"
+            android:textColor="@color/black"
             android:textSize="9sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView8"
             app:layout_constraintTop_toBottomOf="@+id/input_field1"
             tools:ignore="SmallSp,TextSizeCheck,VisualLintBounds" />
@@ -119,8 +127,10 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="76dp"
             android:text="@string/textview"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -149,13 +159,16 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
 
-            android:layout_marginStart="72dp"
             android:layout_marginTop="64dp"
             android:background="@drawable/round_corner_button"
             android:text="@string/login_to_account"
             android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/input_field1" />
+            app:layout_constraintTop_toBottomOf="@+id/input_field1"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/button3"
@@ -175,17 +188,18 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-
-
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="213dp"
         android:layout_height="126dp"
-        android:layout_marginStart="84dp"
         android:layout_marginTop="60dp"
-        android:importantForAccessibility="no" app:layout_constraintStart_toStartOf="parent"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo" />
 
     <TextView
@@ -196,9 +210,10 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints,TextSizeCheck"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="186dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView6"
@@ -208,7 +223,8 @@
         android:textColor="@color/white"
         android:textSize="11sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints,TextSizeCheck"
-        tools:layout_editor_absoluteX="89dp"
-        tools:layout_editor_absoluteY="235dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints,TextSizeCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

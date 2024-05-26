@@ -3,18 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".splash.SplashFourActivity">
 
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="246dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="104dp"
         android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183"
         tools:ignore="MissingConstraints,ImageContrastCheck"
         tools:srcCompat="@drawable/s2" />
 
@@ -22,12 +25,12 @@
         android:id="@+id/textView"
         android:layout_width="279dp"
         android:layout_height="92dp"
-        android:layout_marginStart="64dp"
         android:layout_marginTop="44dp"
         android:text="@string/stay_informed"
         android:textColor="@color/black"
         android:textSize="32sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         tools:ignore="MissingConstraints,TextSizeCheck" />
@@ -36,12 +39,12 @@
         android:id="@+id/textView1"
         android:layout_width="276dp"
         android:layout_height="44dp"
-        android:layout_marginStart="64dp"
         android:layout_marginTop="4dp"
         android:text="@string/receive_timely"
         android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints,TextSizeCheck" />
@@ -50,11 +53,13 @@
         android:id="@+id/imageView3"
         android:layout_width="103dp"
         android:layout_height="121dp"
-        android:layout_marginStart="152dp"
         android:layout_marginTop="16dp"
         android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.106"
         app:srcCompat="@drawable/img"
         tools:ignore="MissingConstraints" />
 
