@@ -23,9 +23,11 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_weight="1"
-            android:text="Welcome Back,"
+            android:text="@string/welcome_back"
+            android:textColor="#C5CAE9"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextSizeCheck" />
 
         <ImageView
             android:id="@+id/imageView8"
@@ -34,6 +36,7 @@
             android:layout_marginStart="180dp"
             android:layout_marginTop="16dp"
             android:layout_weight="1"
+            android:importantForAccessibility="no"
             app:layout_constraintStart_toEndOf="@+id/textView12"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_alternate_email_24" />
@@ -44,6 +47,7 @@
             android:layout_height="42dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="4dp"
+            android:importantForAccessibility="no"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/imageView8"
@@ -56,9 +60,10 @@
             android:layout_height="27dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="James Anderson"
+            android:text="@string/james_anderson"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            tools:ignore="TextSizeCheck,TextContrastCheck" />
 
         <TextView
             android:id="@+id/textView14"
@@ -66,7 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="64dp"
-            android:text="Overview"
+            android:text="@string/overview"
+            android:textColor="#B39DDB"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -84,27 +90,29 @@
 
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="ScrollViewSize,VisualLintBounds">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:importantForAccessibility="no">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/alert" />
+                        android:background="@drawable/alert" android:importantForAccessibility="no" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="1dp"
                         android:layout_marginTop="25dp"
-                        android:text="annoucment" />
+                        android:text="@string/annoucment" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -117,33 +125,35 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/cometie" />
+                        android:background="@drawable/cometie" android:importantForAccessibility="no" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="1dp"
                         android:layout_marginTop="25dp"
-                        android:text="Committees" />
+                        android:text="@string/comm" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:importantForAccessibility="no">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/alert" />
+                        android:background="@drawable/alert"
+                        android:importantForAccessibility="no" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="1dp"
                         android:layout_marginTop="25dp"
-                        android:text="annoucment" />
+                        android:text="@string/annoucment" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -156,14 +166,15 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/evnt" />
+                        android:background="@drawable/evnt" android:importantForAccessibility="no" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="25dp"
-                        android:text="event" />
+                        android:text="event"
+                        tools:ignore="HardcodedText" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -171,19 +182,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:importantForAccessibility="no">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/alert" />
+                        android:background="@drawable/alert"
+                        android:importantForAccessibility="no" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="25dp"
-                        android:text="ok" />
+                        android:text="@string/ok" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -191,19 +204,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:layout_margin="10dp">
+                    android:layout_margin="10dp"
+                    android:importantForAccessibility="no">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/alert" />
+                        android:background="@drawable/alert"
+                        android:importantForAccessibility="no" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="25dp"
-                        android:text="as" />
+                        android:text="@string/as" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -227,13 +242,15 @@
             android:id="@+id/textView15"
             android:layout_width="336dp"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/latest_announcements"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/see_all"
+            tools:ignore="TextSizeCheck,VisualLintBounds" />
 
     </LinearLayout>
 
@@ -254,13 +271,15 @@
             android:id="@+id/textView29"
             android:layout_width="336dp"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/upcoming_events"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/textView26"
             android:layout_width="75dp"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/see_all"
+            tools:ignore="TextSizeCheck,VisualLintBounds" />
 
     </LinearLayout>
 
@@ -275,7 +294,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -287,16 +307,18 @@
                 android:layout_height="200dp"
                 android:orientation="vertical"
                 android:background="@drawable/black_border_button">
+
                 <TextView
                     android:layout_width="135dp"
                     android:layout_height="62dp"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="15dp"
-                    android:text="Family Reunion Announcement at Restau.." />
+                    android:text="@string/family_reunion_an"
+                    tools:ignore="TextSizeCheck" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Livia Donin"
+                    android:text="@string/livi"
                     android:textStyle="bold"
                     android:layout_gravity="center"
                     />
@@ -308,34 +330,38 @@
                     android:layout_gravity=""
                     android:layout_marginTop="90dp"
                     android:layout_marginStart="9dp"
+                    android:importantForAccessibility="no"
                     app:layout_constraintStart_toEndOf="@+id/imageView8"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/profile_pic" />
+
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10/10/2000"
-                    android:layout_marginTop="20dp"
-                    android:textStyle="normal"
-                    android:textSize="10sp"
                     android:layout_gravity="center"
-                    tools:ignore="Autofill" />
+                    android:layout_marginTop="20dp"
+                    android:text="@string/_10_10_2000"
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    tools:ignore="Autofill,DuplicateSpeakableTextCheck,LabelFor,SmallSp,TextFields,TouchTargetSizeCheck" />
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:orientation="vertical"
                 android:background="@drawable/black_border_button">
+
                 <TextView
                     android:layout_width="135dp"
                     android:layout_height="62dp"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="15dp"
-                    android:text="Family Reunion Announcement at Restau.." />
+                    android:text="@string/fam"
+                    tools:ignore="TextSizeCheck" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Livia Donin"
+                    android:text="@string/livia_donin"
                     android:textStyle="bold"
                     android:layout_gravity="center"
                     />
@@ -347,35 +373,40 @@
                     android:layout_gravity=""
                     android:layout_marginTop="90dp"
                     android:layout_marginStart="9dp"
+                    android:importantForAccessibility="no"
                     app:layout_constraintStart_toEndOf="@+id/imageView8"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/profile_pic" />
+
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:importantForAutofill="no"
-                    android:text="10/10/2000"
-                    android:layout_marginTop="20dp"
-                    android:textStyle="normal"
-                    android:textSize="10sp"
                     android:layout_gravity="center"
-                    tools:ignore="Autofill" />
+                    android:layout_marginTop="20dp"
+                    android:importantForAutofill="no"
+                    android:text="@string/_10_10_2000"
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    tools:ignore="Autofill,LabelFor,SmallSp,TextFields,TouchTargetSizeCheck" />
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="160dp"
                 android:layout_height="200dp"
                 android:orientation="vertical"
                 android:background="@drawable/black_border_button">
+
                 <TextView
                     android:layout_width="135dp"
                     android:layout_height="62dp"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="15dp"
-                    android:text="Family Reunion Announcement at Restau.." />
+                    android:text="@string/fa"
+                    tools:ignore="TextSizeCheck" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Livia Donin"
+                    android:importantForAccessibility="no"
+                    android:text="@string/li"
                     android:textStyle="bold"
                     android:layout_gravity="center"
                     />
@@ -387,20 +418,54 @@
                     android:layout_gravity=""
                     android:layout_marginTop="90dp"
                     android:layout_marginStart="9dp"
-                    app:layout_constraintStart_toEndOf="@+id/imageView8"
+                    android:importantForAccessibility="no" app:layout_constraintStart_toEndOf="@+id/imageView8"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/profile_pic" />
+
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10/10/2000"
-                    android:layout_marginTop="20dp"
-                    android:textStyle="normal"
-                    android:textSize="10sp"
                     android:layout_gravity="center"
-                    />
+                    android:layout_marginTop="20dp"
+                    android:importantForAutofill="no"
+                    android:text="@string/_10_10_2000"
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    tools:ignore="LabelFor,SmallSp,TextFields,TouchTargetSizeCheck" />
             </androidx.cardview.widget.CardView>
         </LinearLayout>
         </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="204dp"
+        android:orientation="vertical"
+        android:elevation="222dp"
+        android:background="@drawable/img_9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="VisualLintBounds">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/sep_29_2022_10_00_pm" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="@string/family_reunion_event"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

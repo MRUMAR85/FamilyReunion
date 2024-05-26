@@ -18,7 +18,8 @@
             android:layout_height="74dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Event Name"
+            android:hint="@string/event_name"
+            android:importantForAutofill="no"
             android:inputType="text"
             android:padding="12dp" />
 
@@ -30,7 +31,8 @@
             android:layout_below="@id/eventName"
             android:layout_marginBottom="16dp"
             android:background="@drawable/edit_text_background"
-            android:hint="Event Description"
+            android:hint="@string/event_description"
+            android:importantForAutofill="no"
             android:inputType="textMultiLine"
             android:padding="12dp" />
 
@@ -42,6 +44,7 @@
             android:layout_marginTop="2dp"
             android:id="@+id/layout"
             android:layout_marginBottom="16dp"
+            android:importantForAutofill="no"
             android:orientation="horizontal">
 
             <EditText
@@ -51,9 +54,11 @@
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_background"
                 android:drawableStart="@drawable/ic_calendar"
-                android:hint="Start Date"
+                android:hint="@string/start_date"
+                android:importantForAutofill="no"
                 android:inputType="date"
-                android:padding="12dp" />
+                android:padding="12dp"
+                tools:ignore="VisualLintTextFieldSize" />
 
             <EditText
                 android:id="@+id/endDate"
@@ -63,9 +68,11 @@
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_background"
                 android:drawableStart="@drawable/ic_calendar"
-                android:hint="End Date"
+                android:hint="@string/end_date"
+                android:importantForAutofill="no"
                 android:inputType="date"
-                android:padding="12dp" />
+                android:padding="12dp"
+                tools:ignore="VisualLintTextFieldSize" />
         </LinearLayout>
 
         <!-- Start Time Input -->
@@ -85,9 +92,11 @@
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_background"
                 android:drawableStart="@drawable/ic_clock"
-                android:hint="Start Time"
+                android:hint="@string/start_time"
+                android:importantForAutofill="no"
                 android:inputType="time"
-                android:padding="12dp" />
+                android:padding="12dp"
+                tools:ignore="VisualLintTextFieldSize" />
 
             <EditText
                 android:id="@+id/endTime"
@@ -97,9 +106,11 @@
                 android:layout_weight="1"
                 android:background="@drawable/edit_text_background"
                 android:drawableStart="@drawable/ic_clock"
-                android:hint="End Time"
+                android:hint="@string/end_time"
+                android:importantForAutofill="no"
                 android:inputType="time"
-                android:padding="12dp" />
+                android:padding="12dp"
+                tools:ignore="VisualLintTextFieldSize" />
         </LinearLayout>
 
         <!-- Location Input -->
@@ -113,9 +124,11 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/edit_text_background"
             android:drawableStart="@drawable/ic_location"
-            android:hint="Location"
+            android:hint="@string/location"
+            android:importantForAutofill="no"
             android:inputType="text"
-            android:padding="12dp" />
+            android:padding="12dp"
+            tools:ignore="VisualLintTextFieldSize" />
 
         <!-- Add Images Button -->
         <Button
@@ -126,7 +139,8 @@
             android:layout_marginBottom="16dp"
             android:drawableStart="@drawable/ic_camera"
             android:padding="12dp"
-            android:text="Add Images (Optional)" />
+            android:text="@string/add_images_optional"
+            tools:ignore="VisualLintButtonSize" />
 
         <!-- Save and Discard Buttons -->
         <LinearLayout
@@ -144,8 +158,9 @@
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:padding="12dp"
-                android:text="Save"
-                android:textColor="@android:color/white" />
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
             <Button
                 android:id="@+id/discardButton"
@@ -155,8 +170,9 @@
                 android:layout_weight="1"
                 android:background="@android:color/white"
                 android:padding="12dp"
-                android:text="Discard"
-                android:textColor="@color/colorPrimary" />
+                android:text="@string/discard"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="ButtonStyle,VisualLintButtonSize" />
         </LinearLayout>
 
     </RelativeLayout>

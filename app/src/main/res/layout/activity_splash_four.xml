@@ -15,7 +15,7 @@
         android:importantForAccessibility="no"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
+        tools:ignore="MissingConstraints,ImageContrastCheck"
         tools:srcCompat="@drawable/s2" />
 
     <TextView
@@ -24,13 +24,13 @@
         android:layout_height="92dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="44dp"
-        android:text="Stay Informed with \t\t\tAnnouncements"
+        android:text="@string/stay_informed"
         android:textColor="@color/black"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView1"
@@ -38,13 +38,13 @@
         android:layout_height="44dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="4dp"
-        android:text="Receive timely updates and announcements about \tyour family reunion. Explore the latest news and \t\t\t\t\t\t\ \t\t\t\t\t\t\t\t events."
+        android:text="@string/receive_timely"
         android:textColor="@color/black"
         android:textSize="12sp"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,TextSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView3"

@@ -17,28 +17,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="224dp"
             android:layout_height="49dp"
-            android:layout_marginTop="55dp"
             android:layout_marginStart="40dp"
+            android:layout_marginTop="55dp"
             android:text="Welcome to App"
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="226dp"
             android:layout_height="27dp"
             android:layout_marginStart="40dp"
-            android:text="Please provide following details to create your account!"
+            android:text="@string/dda"
             android:textColor="@color/black"
             android:textSize="11sp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"/>
+            tools:ignore="MissingConstraints,TextSizeCheck" />
 
     </LinearLayout>
 
@@ -49,7 +50,8 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="TextSizeCheck,VisualLintBounds">
 
         <EditText
             android:id="@+id/enter_name"
@@ -58,7 +60,8 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="12dp"
             android:background="@drawable/black_border_button"
-            android:hint="Name"
+            android:hint="@string/name"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:padding="10dp"
             android:paddingHorizontal="10dp"
@@ -74,7 +77,8 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="36dp"
             android:background="@drawable/black_border_button"
-            android:hint="Email"
+            android:hint="@string/e"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:padding="10dp"
             android:paddingHorizontal="10dp"
@@ -90,7 +94,8 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="36dp"
             android:background="@drawable/black_border_button"
-            android:hint="Password"
+            android:hint="@string/ps"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:padding="10dp"
             android:paddingHorizontal="10dp"
@@ -109,7 +114,7 @@
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="36dp"
             android:background="@drawable/black_border_button"
-            android:hint="Confirm Password"
+            android:hint="@string/co"
             android:inputType="textPersonName"
             android:padding="10dp"
             android:paddingHorizontal="10dp"
@@ -119,7 +124,7 @@
             app:layout_constraintHorizontal_bias="0.6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/enter_name1"
-            tools:ignore="MissingConstraints,TextViewEdits" />
+            tools:ignore="Autofill,MissingConstraints,TextViewEdits" />
 
         <TextView
             android:id="@+id/accept_terms"
@@ -127,13 +132,14 @@
             android:layout_height="45dp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="36dp"
-            android:drawableLeft="@drawable/baseline_add_alert_24"
-            android:text="At least 8 characters with a combination of letters and numbers"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableStart="@drawable/baseline_add_alert_24"
+            android:text="@string/asa"
             android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/enter_name2"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints,TextSizeCheck,UseCompatTextViewDrawableXml" />
+
         <Button
             android:id="@+id/button"
             android:layout_width="250dp"
@@ -141,7 +147,7 @@
             android:layout_marginStart="72dp"
             android:layout_marginTop="44dp"
             android:background="@drawable/round_corner_button"
-            android:text="Login to Account"
+            android:text="@string/login_to_account"
             android:textSize="13sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_field1" />

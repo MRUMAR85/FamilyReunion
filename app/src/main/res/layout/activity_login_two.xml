@@ -12,13 +12,14 @@
         android:layout_width="395dp"
         android:layout_height="392dp"
         android:background="@drawable/curve_shape"
+        android:importantForAccessibility="no"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints">
+        tools:ignore="ExtraText,MissingConstraints,TextSizeCheck">
 
         /
 
@@ -31,11 +32,11 @@
 
             android:background="@color/white"
             android:justificationMode="inter_word"
-            android:text="email"
+            android:text="@string/nail"
             android:visibility="visible"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints,UnusedAttribute" />
 
         <EditText
             android:id="@+id/input_field"
@@ -43,12 +44,14 @@
             android:layout_height="42dp"
             android:layout_marginTop="44dp"
             android:background="@drawable/black_border_button"
-            android:hint="Enter email"
+            android:hint="@string/enter_email"
+            android:importantForAutofill="no"
             android:padding="10dp"
             android:textColor="#000000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextFields,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView2"
@@ -56,7 +59,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="64dp"
-            android:text="Password"
+            android:autofillHints=""
+            android:importantForAutofill="no"
+            android:text="@string/p"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             tools:ignore="MissingConstraints" />
@@ -64,20 +69,22 @@
         <EditText
             android:id="@+id/input_field1"
             android:layout_width="375dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/black_border_button"
-            android:hint="Enter password"
+            android:hint="@string/enter"
+            android:importantForAutofill="no"
             android:padding="10dp"
             android:textColor="#000000"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/input_field" />
+            app:layout_constraintTop_toBottomOf="@+id/input_field"
+            tools:ignore="TextFields" />
 
         <RadioButton
             android:id="@+id/radioButton"
-            android:layout_width="29dp"
-            android:layout_height="33dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
             android:text=""
@@ -86,14 +93,15 @@
 
         <TextView
             android:id="@+id/textView8"
-            android:layout_width="98dp"
-            android:layout_height="9dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="24dp"
+            android:layout_width="99dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
             android:text="Remember me"
             android:textSize="10sp"
             app:layout_constraintStart_toEndOf="@+id/radioButton"
-            app:layout_constraintTop_toBottomOf="@+id/input_field1" />
+            app:layout_constraintTop_toBottomOf="@+id/input_field1"
+            tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
 
         <TextView
             android:id="@+id/textView9"
@@ -101,10 +109,11 @@
             android:layout_height="24dp"
             android:layout_marginStart="144dp"
             android:layout_marginTop="28dp"
-            android:text="Forget Password"
+            android:text="@string/forget_password"
             android:textSize="9sp"
             app:layout_constraintStart_toEndOf="@+id/textView8"
-            app:layout_constraintTop_toBottomOf="@+id/input_field1" />
+            app:layout_constraintTop_toBottomOf="@+id/input_field1"
+            tools:ignore="SmallSp,TextSizeCheck,VisualLintBounds" />
 
         <TextView
             android:id="@+id/textView4"
@@ -129,10 +138,11 @@
 
             android:background="@drawable/round_corner_button"
             android:drawableLeft="@drawable/img_3"
-            android:text="Apple"
+            android:text="@string/apple"
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            tools:ignore="RtlHardcoded,TextContrastCheck" />
 
         <Button
             android:id="@+id/button"
@@ -142,7 +152,7 @@
             android:layout_marginStart="72dp"
             android:layout_marginTop="64dp"
             android:background="@drawable/round_corner_button"
-            android:text="Login to Account"
+            android:text="@string/login_to_account"
             android:textSize="13sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_field1" />
@@ -155,10 +165,13 @@
             android:layout_marginTop="12dp"
             android:layout_weight="1"
             android:background="@drawable/round_corner_button"
+            android:contentDescription="@string/todo"
             android:drawableLeft="@drawable/img_4"
-            android:text="GOOGLE"
+            android:importantForAccessibility="no"
+            android:text="@string/google"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            tools:ignore="RtlHardcoded" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -171,7 +184,7 @@
         android:layout_height="126dp"
         android:layout_marginStart="84dp"
         android:layout_marginTop="60dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAccessibility="no" app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
@@ -179,11 +192,11 @@
         android:id="@+id/textView5"
         android:layout_width="224dp"
         android:layout_height="49dp"
-        android:text="Welcome Back!"
+        android:text="@string/welcome_back"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
+        tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="91dp"
         tools:layout_editor_absoluteY="186dp" />
 
@@ -191,11 +204,11 @@
         android:id="@+id/textView6"
         android:layout_width="226dp"
         android:layout_height="27dp"
-        android:text="Please provide following details to continue"
+        android:text="@string/aaaa"
         android:textColor="@color/white"
         android:textSize="11sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
+        tools:ignore="MissingConstraints,TextSizeCheck"
         tools:layout_editor_absoluteX="89dp"
         tools:layout_editor_absoluteY="235dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

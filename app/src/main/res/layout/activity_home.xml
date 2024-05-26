@@ -24,8 +24,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
+            android:focusable="true"
             android:importantForAccessibility="no"
             app:srcCompat="@drawable/img_8"
+            android:background="@color/black"
             android:layout_marginStart="340dp"
             android:layout_marginTop="600dp"/>
     </FrameLayout>
@@ -59,7 +61,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_bottom_nav_home_activity" />
+        app:menu="@menu/menu_bottom_nav_home_activity"
+        tools:ignore="VisualLintBottomNav" />
 
 
 

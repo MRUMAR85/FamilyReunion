@@ -14,12 +14,14 @@ android:orientation="vertical">
         android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/backButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
             android:src="@drawable/ic_back_arrow" />
 
         <TextView
@@ -28,7 +30,7 @@ android:orientation="vertical">
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="16dp"
-            android:text="Committees"
+            android:text="@string/committe"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -39,7 +41,7 @@ android:orientation="vertical">
         android:layout_below="@id/layout1"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
-        android:text="Committees"
+        android:text="@string/committ"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout1" />
@@ -62,7 +64,8 @@ android:orientation="vertical">
             android:layout_height="wrap_content"
             android:text="Committee Name Lorem"
             android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
 
         <LinearLayout
             android:id="@+id/membersLayout"
@@ -77,6 +80,7 @@ android:orientation="vertical">
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginEnd="4dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/ic_member1" />
 
             <ImageView
@@ -84,6 +88,7 @@ android:orientation="vertical">
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginEnd="4dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/ic_member2" />
 
             <ImageView
@@ -91,6 +96,7 @@ android:orientation="vertical">
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginEnd="4dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/ic_member3" />
 
             <TextView
@@ -98,7 +104,7 @@ android:orientation="vertical">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="+ 13 others"
+                android:text="@string/_13_others"
                 android:textColor="@color/colorPrimary" />
         </LinearLayout>
 
@@ -108,6 +114,7 @@ android:orientation="vertical">
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:importantForAccessibility="no"
             android:src="@drawable/ic_arrow" />
     </RelativeLayout>
 
@@ -127,9 +134,11 @@ android:orientation="vertical">
             android:id="@+id/committeeName1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Committee Name Lorem"
+            android:importantForAccessibility="no"
+            android:text="@string/c"
             android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="RelativeOverlap" />
 
         <LinearLayout
             android:id="@+id/membersLayout1"
@@ -137,6 +146,7 @@ android:orientation="vertical">
             android:layout_height="wrap_content"
             android:layout_below="@id/committeeName1"
             android:layout_marginTop="8dp"
+            android:importantForAccessibility="no"
             android:orientation="horizontal">
 
             <ImageView
@@ -144,20 +154,21 @@ android:orientation="vertical">
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginEnd="4dp"
-                android:src="@drawable/ic_member1" />
+                android:importantForAccessibility="no" android:src="@drawable/ic_member1" />
 
             <ImageView
                 android:id="@+id/member21"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginEnd="4dp"
-                android:src="@drawable/ic_member2" />
+                android:importantForAccessibility="no" android:src="@drawable/ic_member2" />
 
             <ImageView
                 android:id="@+id/member31"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginEnd="4dp"
+               android:importantForAccessibility="no"
                 android:src="@drawable/ic_member3" />
 
             <TextView
@@ -165,7 +176,8 @@ android:orientation="vertical">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="+ 13 others"
+                android:importantForAccessibility="no"
+                android:text="@string/_13_others"
                 android:textColor="@color/colorPrimary" />
         </LinearLayout>
 
@@ -175,7 +187,7 @@ android:orientation="vertical">
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_arrow" />
+            android:importantForAccessibility="no" android:src="@drawable/ic_arrow" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -194,9 +206,11 @@ android:orientation="vertical">
             android:id="@+id/committeeName2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Committee Name Lorem"
+            android:importantForAccessibility="no"
+            android:text="@string/committee_name_lorem"
             android:textColor="@android:color/black"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="RelativeOverlap" />
 
         <LinearLayout
             android:id="@+id/membersLayout2"
@@ -204,6 +218,7 @@ android:orientation="vertical">
             android:layout_height="wrap_content"
             android:layout_below="@id/committeeName2"
             android:layout_marginTop="8dp"
+            android:importantForAccessibility="no"
             android:orientation="horizontal">
 
             <ImageView
@@ -211,13 +226,14 @@ android:orientation="vertical">
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginEnd="4dp"
-                android:src="@drawable/ic_member1" />
+                android:importantForAccessibility="no" android:src="@drawable/ic_member1" />
 
             <ImageView
                 android:id="@+id/member22"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginEnd="4dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/ic_member2" />
 
             <ImageView
@@ -225,6 +241,7 @@ android:orientation="vertical">
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_marginEnd="4dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/ic_member3" />
 
             <TextView
@@ -232,7 +249,8 @@ android:orientation="vertical">
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="+ 13 others"
+                android:importantForAccessibility="no"
+                android:text="@string/_13_others"
                 android:textColor="@color/colorPrimary" />
         </LinearLayout>
 
@@ -242,7 +260,7 @@ android:orientation="vertical">
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:src="@drawable/ic_arrow" />
+            android:importantForAccessibility="no" android:src="@drawable/ic_arrow" />
     </RelativeLayout>
 
     <Button
@@ -250,7 +268,7 @@ android:orientation="vertical">
         android:layout_width="126dp"
         android:layout_height="61dp"
         android:layout_marginBottom="36dp"
-        android:text="Button"
+        android:text="@string/but"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.451"
