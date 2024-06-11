@@ -1,8 +1,9 @@
-// Announcement.kt
+package com.example.familyreunion.roomdb
+
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "announcements")
+@Entity
 data class Announcement(
     @PrimaryKey(autoGenerate = true) val id: Int,
     val title: String,

@@ -1,22 +1,17 @@
-// AnnouncementRepository.kt
-import android.content.Context
-import androidx.lifecycle.LiveData
-import androidx.room.Room
+package com.example.familyreunion.repositry
 
-class AnnouncementRepository(context: Context) {
-    private val db = Room.databaseBuilder(
-        context.applicationContext,
-        AppDatabase::class.java,
-        "app_database"
-    ).build()
+import android.app.Application
+import com.example.familyreunion.roomdb.Announcement
+import com.example.familyreunion.roomdb.AppDatabase
 
-    private val announcementDao = db.announcementDao()
+class AnnouncementRepository(application: Application) {
 
-    fun getAllAnnouncements(): LiveData<List<Announcement>> = announcementDao.getAllAnnouncements()
+    val db = AppDatabase.getDatabase(application)
 
-    fun insert(announcement: Announcement) {
-        Thread {
-            announcementDao.insert(announcement)
-        }.start()
+    val announcementDao = db.announcementDao()
+
+    fun insertAnnouncement(announcement : Announcement)
+    {
+
     }
 }

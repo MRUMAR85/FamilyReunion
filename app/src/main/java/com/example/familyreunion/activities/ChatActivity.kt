@@ -6,7 +6,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.chatapp.ChatAdapter
+import com.example.familyreunion.Adapter.RecyclerView.ChatAdapter
 import com.example.familyreunion.Adapter.RecyclerView.ChatMessage
 import com.example.familyreunion.R
 import com.example.familyreunion.databinding.ActivityCommitteeBinding

@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment
 import com.example.familyreunion.R
 import com.example.familyreunion.databinding.ActivityHomeBinding
 import com.example.familyreunion.fragment.HomeFragment
+import com.example.familyreunion.fragment.EventFragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class HomeActivity : AppCompatActivity() {
@@ -44,6 +45,7 @@ class HomeActivity : AppCompatActivity() {
         binding.bottomNavigationView.setOnItemSelectedListener {
             val frag = when(it.itemId){
                 R.id.bottomNavHome -> HomeFragment()
+                R.id.bottomNavEvent -> EventFragment()
                 /*  R.id.bottomNavTransactions -> TransactionFragment()
                   R.id.bottomNavBudget -> BudgetFragment()
                   R.id.bottomNavProfile -> ProfileFragment()*/

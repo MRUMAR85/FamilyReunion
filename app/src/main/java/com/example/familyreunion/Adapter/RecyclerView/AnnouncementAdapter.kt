@@ -1,12 +1,12 @@
 package com.example.familyreunion.Adapter.RecyclerView
-// AnnouncementAdapter.kt
-import Announcement
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.familyreunion.R
+import com.example.familyreunion.roomdb.Announcement
 
 class AnnouncementAdapter(private val announcements: List<Announcement>) :
     RecyclerView.Adapter<AnnouncementAdapter.AnnouncementViewHolder>() {

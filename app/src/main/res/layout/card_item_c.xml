@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
     app:cardCornerRadius="10dp"
-    android:id="@+id/ann"
     app:cardElevation="4dp">
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:contentDescription="TODO"
-        android:importantForAccessibility="no"
         android:orientation="vertical"
-        android:padding="8dp"
-        tools:ignore="UseCompoundDrawables">
+        android:padding="8dp">
 
         <ImageView
             android:id="@+id/cardImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
-            app:srcCompat="@drawable/alert" />
+            app:srcCompat="@drawable/cometie" />
 
         <TextView
             android:id="@+id/cardText"
@@ -31,8 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_gravity="center_horizontal"
-            android:text="announcement"
-            tools:ignore="HardcodedText" />
+            android:text="commetie" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

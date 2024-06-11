@@ -1,4 +1,4 @@
-package com.example.chatapp
+package com.example.familyreunion.Adapter.RecyclerView
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.familyreunion.Adapter.RecyclerView.ChatMessage
 import com.example.familyreunion.R
 
 class ChatAdapter(context: Context, messages: List<ChatMessage>) : ArrayAdapter<ChatMessage>(context, 0, messages) {
