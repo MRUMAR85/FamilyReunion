@@ -14,8 +14,8 @@ class AnnouncementViewModel(application: Application) : AndroidViewModel(applica
 
     private val db = AppDatabase.getDatabase(application)
 
-    private val _transactions = MutableLiveData<List<Announcement>>()
-    val transactions: LiveData<List<Announcement>> get() = _transactions
+    private val _announcementList = MutableLiveData<List<Announcement>>()
+    val announcementList: LiveData<List<Announcement>> get() = _announcementList
 
     init {
             fetchAllAnnouncements()
@@ -32,7 +32,7 @@ class AnnouncementViewModel(application: Application) : AndroidViewModel(applica
     {
         viewModelScope.launch {
             val list = db.announcementDao().getAll()
-            _transactions.postValue(list)
+            _announcementList.postValue(list)
         }
     }
 
