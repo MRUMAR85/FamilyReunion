@@ -8,8 +8,8 @@ import androidx.room.Query
 @Dao
 interface AnnouncementDao {
     @Query("SELECT * FROM announcement")
-    fun getAll(): LiveData<List<Announcement>>
+    fun getAll(): List<Announcement>
 
     @Insert
-    suspend fun insert(announcement: Announcement)
+    suspend fun insertAnnouncement(announcement: Announcement)
 }

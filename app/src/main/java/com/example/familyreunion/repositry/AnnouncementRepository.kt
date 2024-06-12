@@ -6,12 +6,12 @@ import com.example.familyreunion.roomdb.AppDatabase
 
 class AnnouncementRepository(application: Application) {
 
-    val db = AppDatabase.getDatabase(application)
-
-    val announcementDao = db.announcementDao()
-
-    fun insertAnnouncement(announcement : Announcement)
-    {
-
-    }
+//    val db = AppDatabase.getDatabase(application)
+//
+//    val announcementDao = db.announcementDao()
+//
+//    fun insertAnnouncement(announcement : Announcement)
+//    {
+//
+//    }
 }
