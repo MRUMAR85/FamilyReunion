@@ -8,7 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.familyreunion.R
 import com.example.familyreunion.roomdb.Announcement
 
-class AnnouncementAdapter(private val announcements: List<Announcement>) :
+class AnnouncementAdapter(private var announcements: List<Announcement>) :
+
     RecyclerView.Adapter<AnnouncementAdapter.AnnouncementViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AnnouncementViewHolder {
@@ -26,6 +27,12 @@ class AnnouncementAdapter(private val announcements: List<Announcement>) :
     }
 
     override fun getItemCount() = announcements.size
+
+     fun updateAnnouncementAdapter(announcements: List<Announcement>)
+    {
+        this.announcements = announcements
+    }
+
 
     class AnnouncementViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val title: TextView = itemView.findViewById(R.id.tvTitle)
