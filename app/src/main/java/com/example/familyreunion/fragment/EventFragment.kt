@@ -1,6 +1,5 @@
 package com.example.familyreunion.fragment
 
-import EventAdapter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.familyreunion.R
-import com.example.familyreunion.model.Event
 
 class EventFragment : Fragment() {
 
@@ -29,8 +27,6 @@ class EventFragment : Fragment() {
         // Set up RecyclerView
         rvUpcomingEvents.layoutManager = LinearLayoutManager(context)
         // Assuming you have a list of events, set the adapter
-        val events = getEvents() // Replace with your data source
-        rvUpcomingEvents.adapter = EventAdapter(events)
 
         // Set click listener for the button
         btnCreateEvent.setOnClickListener {
@@ -40,12 +36,5 @@ class EventFragment : Fragment() {
         return view
     }
 
-    private fun getEvents(): List<Event> {
-        // Replace with your data source
-        return listOf(
-            Event("Sep 29, 2022 • 10:00 PM", "Family Reunion Event", "California, CA", R.drawable.s1),
-            Event("Sep 29, 2022 • 10:00 PM", "Family Reunion Event", "California, CA", R.drawable.s1)
-        )
-    }
 }
 

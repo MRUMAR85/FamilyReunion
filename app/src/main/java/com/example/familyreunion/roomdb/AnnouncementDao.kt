@@ -1,6 +1,5 @@
 package com.example.familyreunion.roomdb
 
-import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
@@ -12,4 +11,5 @@ interface AnnouncementDao {
 
     @Insert
     suspend fun insertAnnouncement(announcement: Announcement)
+
 }

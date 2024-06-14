@@ -5,7 +5,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.familyreunion.R
-import com.example.familyreunion.model.Event
+import com.example.familyreunion.roomdb.Event
 
 class EventAdapter(private val events: List<Event>) : RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
 
@@ -15,12 +15,9 @@ class EventAdapter(private val events: List<Event>) : RecyclerView.Adapter<Event
     }
 
     override fun onBindViewHolder(holder: EventViewHolder, position: Int) {
-        val event = events[position]
-        holder.tvEventDate.text = event.date
-        holder.tvEventName.text = event.name
-        holder.tvEventLocation.text = event.location
-        holder.ivEventImage.setImageResource(event.imageResId)
+        TODO("Not yet implemented")
     }
+
 
     override fun getItemCount() = events.size
 

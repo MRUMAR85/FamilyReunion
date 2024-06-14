@@ -5,9 +5,9 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.familyreunion.repositry.AnnouncementRepository
 import com.example.familyreunion.roomdb.Announcement
 import com.example.familyreunion.roomdb.AppDatabase
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class AnnouncementViewModel(application: Application) : AndroidViewModel(application) {
@@ -22,7 +22,7 @@ class AnnouncementViewModel(application: Application) : AndroidViewModel(applica
     }
 
     fun insertAnnouncement(announcement: Announcement) {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             db.announcementDao().insertAnnouncement(announcement)
             fetchAllAnnouncements()
         }
@@ -30,7 +30,7 @@ class AnnouncementViewModel(application: Application) : AndroidViewModel(applica
 
     private fun fetchAllAnnouncements()
     {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             val list = db.announcementDao().getAll()
             _announcementList.postValue(list)
         }

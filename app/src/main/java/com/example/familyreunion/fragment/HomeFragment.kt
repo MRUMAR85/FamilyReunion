@@ -21,10 +21,12 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = binding.root
 
+        binding.latestAnnouncementsText.setOnClickListener {
+            startActivity(Intent(requireContext(), AnnouncementsActivity::class.java))
+        }
         binding.ann.setOnClickListener {
             startActivity(Intent(requireContext(), AnnouncementsActivity::class.java))
         }
-
         return view
     }
 }
