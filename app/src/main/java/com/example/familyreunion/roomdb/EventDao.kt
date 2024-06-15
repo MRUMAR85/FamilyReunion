@@ -6,9 +6,11 @@ import androidx.room.Query
 
 @Dao
 interface EventDao {
+
+    @Query("SELECT * FROM events")
+    fun getAll(): List<Event>
     @Insert
     suspend fun insertEvent(event: Event)
 
-    @Query("SELECT * FROM events")
-    suspend fun getAllEvents(): List<Event>
+
 }
