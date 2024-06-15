@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="200dp"
+    app:cardElevation="4dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="20dp"
+    android:background="@drawable/black_border_button">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="62dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/family_reunion_an"
+            android:textColor="#000"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/livi"
+            android:textStyle="bold"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="31dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="9dp"
+            android:importantForAccessibility="no"
+            app:srcCompat="@drawable/profile_pic" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="1dp"
+            android:minHeight="48dp"
+            android:text="@string/_10_10_2000"
+            android:textColor="#000"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            tools:ignore="LabelFor,SmallSp,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

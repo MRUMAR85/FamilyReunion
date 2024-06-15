@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img_2"
-    >
+    tools:context=".LoginOneActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="395dp"
         android:layout_height="392dp"
-        android:layout_marginStart="8dp"
         android:background="@drawable/curve_shape"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
@@ -25,12 +26,12 @@
             android:layout_height="92dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="20dp"
-            android:text="     Welcome to FamilyReunionApp!"
+            android:text="@string/welcome_to_familyreunionapp"
             android:textColor="@color/black"
             android:textSize="32sp"
             android:textStyle="bold"
 
-            tools:ignore="MissingConstraints"
+            tools:ignore="MissingConstraints,TextSizeCheck"
             tools:layout_editor_absoluteX="63dp"
             tools:layout_editor_absoluteY="427dp" />
 
@@ -40,12 +41,12 @@
             android:layout_height="38dp"
 
             android:layout_marginStart="50dp"
-            android:text="Start your family reunion journey with us. Connect\u0021      \t\t\tand plan memorable moments effortlessly."
+            android:text="@string/aa"
             android:textColor="@color/black"
             android:textSize="12sp"
             android:textStyle="normal"
 
-            tools:ignore="MissingConstraints"
+            tools:ignore="MissingConstraints,TextSizeCheck"
             tools:layout_editor_absoluteX="68dp"
             tools:layout_editor_absoluteY="526dp" />
 
@@ -57,7 +58,7 @@
             android:layout_marginTop="20dp"
 
             android:background="@drawable/round_corner_button"
-            android:text="Login to Account"
+            android:text="@string/login_to_account"
             android:textSize="13sp" />
 
         <LinearLayout
@@ -77,7 +78,8 @@
                 android:background="@drawable/round_corner_button"
                 android:drawableLeft="@drawable/img_3"
                 android:text="Apple"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded,TextContrastCheck" />
 
             <Button
                 android:id="@+id/button3"
@@ -89,8 +91,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/round_corner_button"
                 android:drawableLeft="@drawable/img_4"
-                android:drawableBottom="@drawable/"
-                android:text="GOOGLE" />
+                android:text="@string/google"
+                tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded" />
         </LinearLayout>
 
         <TextView
@@ -108,9 +110,13 @@
         android:id="@+id/imageView4"
         android:layout_width="221dp"
         android:layout_height="151dp"
-        android:layout_marginStart="92dp"
         android:layout_marginTop="92dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125"
         app:srcCompat="@drawable/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

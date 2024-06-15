@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Back button and title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout1"
+        android:layout_marginBottom="16dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/committees"
+            android:textSize="20sp"
+            android:layout_marginStart="16dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Committees header -->
+
+    <!-- RecyclerView for committees list -->
+    <TextView
+        android:id="@+id/committeesHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="-6dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/committees"
+        android:textSize="18sp" />
+
+    <!-- Create Committee Button -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/committeesList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/createCommitteeButton"
+        android:layout_below="@id/committeesHeader"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="15dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/createCommitteeButton"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/black_border_button"
+        android:text="@string/create_committee"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
