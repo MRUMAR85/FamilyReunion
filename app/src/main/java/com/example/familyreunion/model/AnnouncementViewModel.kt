@@ -6,13 +6,13 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.familyreunion.roomdb.Announcement
-import com.example.familyreunion.roomdb.AppDatabase
+import com.example.familyreunion.roomdb.MainAppDB
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class AnnouncementViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val db = AppDatabase.getDatabase(application)
+    private val db = MainAppDB.getDatabase(application)
 
     private val _announcementList = MutableLiveData<List<Announcement>>()
     val announcementList: LiveData<List<Announcement>> get() = _announcementList

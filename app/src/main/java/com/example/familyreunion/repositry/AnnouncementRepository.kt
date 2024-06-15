@@ -1,8 +1,6 @@
 package com.example.familyreunion.repositry
 
 import android.app.Application
-import com.example.familyreunion.roomdb.Announcement
-import com.example.familyreunion.roomdb.AppDatabase
 
 class AnnouncementRepository(application: Application) {
 

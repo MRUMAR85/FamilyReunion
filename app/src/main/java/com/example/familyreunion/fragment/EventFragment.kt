@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.familyreunion.R
 import com.example.familyreunion.model.EventViewModelFactory
-import com.example.familyreunion.roomdb.EventDatabase
 import com.example.familyreunion.viewmodel.EventViewModel
 import kotlin.properties.ReadOnlyProperty
 

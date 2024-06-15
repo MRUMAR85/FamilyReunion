@@ -1,25 +1,23 @@
 package com.example.familyreunion.roomdb
 
 import android.content.Context
-import androidx.room.Database
-import androidx.room.Room
-import androidx.room.RoomDatabase
 
-@Database(entities = [Announcement::class], version = 1, exportSchema = false)
-abstract class AppDatabase : RoomDatabase() {
+@Database(entities = [Announcement::class, Event::class], version = 1, exportSchema = false)
+abstract class MainAppDB : RoomDatabase() {
 
     abstract fun announcementDao(): AnnouncementDao
+    abstract fun eventDao(): EventDao
 
     companion object {
         @Volatile
-        private var INSTANCE: AppDatabase? = null
+        private var INSTANCE: MainAppDB? = null
 
-        fun getDatabase(context: Context): AppDatabase {
+        fun getDatabase(context: Context): MainAppDB {
             return INSTANCE ?: synchronized(this) {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
-                    AppDatabase::class.java,
-                    "announcement_database"
+                    MainAppDB::class.java,
+                    "Main-App-database"
                 ).build()
                 INSTANCE = instance
                 instance
