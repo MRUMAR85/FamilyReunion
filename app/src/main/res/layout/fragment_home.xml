@@ -22,6 +22,7 @@
 
     <!-- Header Layout -->
     <TextView
+        android:layout_marginStart="10dp"
         android:id="@+id/welcomeText"
         style="@style/HeaderTextStyle"
         android:text="@string/welcome_back"
@@ -33,13 +34,17 @@
         android:id="@+id/profileImage"
         android:layout_width="42dp"
         android:layout_height="42dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toEndOf="@+id/userName"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile_pic"
-        tools:layout_editor_absoluteX="336dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/userName"
+        android:layout_marginStart="10dp"
         style="@style/BaseTextStyle"
         android:text="@string/james_anderson"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,6 +55,7 @@
     <TextView
         android:id="@+id/overviewText"
         style="@style/SubHeaderTextStyle"
+        android:layout_marginStart="10dp"
         android:text="@string/overview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/userName"
@@ -67,50 +73,52 @@
         app:layout_constraintTop_toBottomOf="@id/overviewText">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp">
-            <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                app:cardCornerRadius="10dp"
-                android:id="@+id/ann"
-                app:cardElevation="4dp">
+            android:gravity="center"
+            android:layout_marginTop="16dp">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="8dp"
-                    tools:ignore="UseCompoundDrawables">
+            <ImageView
+                android:id="@+id/announcementsIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"
+                android:padding="0dp"
+                android:src="@drawable/alert" />
 
-                    <ImageView
-                        android:id="@+id/cardImage"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center_horizontal"
-                        app:srcCompat="@drawable/alert" />
+            <ImageView
+                android:id="@+id/eventsIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/cometie"
+                android:padding="0dp" />
 
-                    <TextView
-                        android:id="@+id/cardText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:layout_gravity="center_horizontal"
-                        android:text="announcement" />
+            <ImageView
+                android:id="@+id/committeesIcon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/alert"
+                android:padding="0dp" />
 
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <include layout="@layout/card_item" />
-            <include layout="@layout/card_item_c" />
-            <include layout="@layout/card_item" />
-            <!-- Add more card items as needed -->
+            <ImageView
+                android:id="@+id/familyReunionIcon"
+                android:layout_width="80dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="80dp"
+                android:src="@drawable/evnt"
+                android:padding="0dp" />
+            <ImageView
+                android:id="@+id/familyReunionIcon2"
+                android:layout_width="80dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="80dp"
+                android:src="@drawable/cometie"
+                android:padding="0dp" />
         </LinearLayout>
+
     </HorizontalScrollView>
 
     <!-- Latest Announcements -->
@@ -144,7 +152,7 @@
             android:paddingEnd="16dp">
 
             <include layout="@layout/card_item2" />
-
+            <include layout="@layout/card_item3" />
             <include layout="@layout/card_item2" />
             <!-- Add more card items as needed -->
         </LinearLayout>

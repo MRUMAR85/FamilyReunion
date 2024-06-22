@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.familyreunion.activities.AnnouncementsActivity
+import com.example.familyreunion.activities.CommitteDetailActivity
 import com.example.familyreunion.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -24,8 +25,14 @@ class HomeFragment : Fragment() {
         binding.latestAnnouncementsText.setOnClickListener {
             startActivity(Intent(requireContext(), AnnouncementsActivity::class.java))
         }
-        binding.ann.setOnClickListener {
+        binding.announcementsIcon.setOnClickListener {
             startActivity(Intent(requireContext(), AnnouncementsActivity::class.java))
+        }
+        binding.profileImage.setOnClickListener {
+            startActivity(Intent(requireContext(), AccountFragment::class.java))
+        }
+        binding.eventsIcon.setOnClickListener {
+            startActivity(Intent(requireContext(), CommitteDetailActivity::class.java))
         }
         return view
     }

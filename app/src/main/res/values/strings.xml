@@ -62,11 +62,11 @@
     <string name="e">Email</string>
     <string name="dda">Please provide following details to create your account!</string>
     <string name="plan">Plan and Schedule \t\t\t\t\t\t\t\t\t\t\t\t Events</string>
-    <string name="se"><![CDATA[Seamlessly organize family gatherings with our event planning feature. View upcoming events & \t\t\t\t\t\t\t\t\t\t\t\t\t add new ones.]]></string>
-    <string name="receive_timely">Receive timely updates and announcements about \tyour family reunion. Explore the latest news and \t\t\t\t\t\t \t\t\t\t\t\t\t\t events.</string>
+    <string name="se"><![CDATA[Seamlessly organize family gatherings with our event planning feature. View upcoming events &  add new ones.]]></string>
+    <string name="receive_timely">Receive timely updates and announcements about \tyour family reunion. Explore the latest news and events.</string>
     <string name="stay_informed">Stay Informed with \t\t\tAnnouncements</string>
     <string name="collaborat">Collaborate with \t\t\t\t\t\t\t Committees</string>
-    <string name="work_together">Work together efficiently by creating committees. \tAssign tasks, share to-do lists, and engage in group \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t chats.</string>
+    <string name="work_together">\tWork together efficiently by creating committees.Assign tasks, share to-do lists, and engage in group chats.</string>
     <string name="welco">Welcome to FamilyReunionApp!</string>
     <string name="start_your">Start your family reunion journey with us. Connect! \t\t\tand plan memorable moments effortlessly.</string>
     <string name="familyreunion">FamilyReunion</string>
@@ -110,5 +110,7 @@
     <string name="sep_29_2022_10_00_pm">Sep 29, 2022 . 10:00 PM</string>
     <string name="family_reunion_event">Family Reunion Event</string>
     <string name="todoa">TODO</string>
+    <string name="wel">Welcome to FamilyReunionApp!</string>
+    <string name="well">Start your family reunion journey with us. Connect and plan memorable moments effortlessly.</string>
 
 </resources>

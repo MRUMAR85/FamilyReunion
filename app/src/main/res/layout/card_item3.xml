@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/livi"
+            android:text="Los Angels"
             android:textStyle="bold"
             android:textColor="#000" />
 
@@ -41,7 +41,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginStart="9dp"
             android:importantForAccessibility="no"
-            app:srcCompat="@drawable/profile_pic" />
+            app:srcCompat="@drawable/user_2" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -52,9 +52,9 @@
             android:minHeight="48dp"
             android:text="@string/_10_10_2000"
             android:textColor="#000"
+            android:focusable="false"
             android:textSize="10sp"
             android:background="@color/white"
-            android:focusable="false"
             android:textStyle="normal"
             tools:ignore="LabelFor,SmallSp,TouchTargetSizeCheck" />
 

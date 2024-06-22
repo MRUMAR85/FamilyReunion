@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lgray"
     tools:context=".activities.AddAnnouncementActivity">
 
     <TextView
@@ -21,15 +22,16 @@
         android:id="@+id/etAnnouncementTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Add the Announcement title"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/tvCreateAnnouncement"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="Add the Announcement title"
         android:padding="12dp"
-        android:background="@drawable/edit_text_background"/>
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreateAnnouncement" />
 
     <EditText
         android:id="@+id/etAnnouncementDescription"
@@ -43,6 +45,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnSaveAnnouncement"
         android:layout_marginHorizontal="16dp"
         android:padding="12dp"
+        android:textColor="@color/black"
         android:background="@drawable/edit_text_background"
         android:gravity="top"/>
 
@@ -52,11 +55,12 @@
         android:layout_height="wrap_content"
         android:text="Save"
         android:layout_margin="16dp"
+        android:shadowColor="@color/lgray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnDiscardAnnouncement"
         app:layout_constraintHorizontal_bias="0.5"
-        android:backgroundTint="@color/colorPrimary"/>
+        android:backgroundTint="@color/gray"/>
 
     <Button
         android:id="@+id/btnDiscardAnnouncement"
@@ -67,6 +71,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnSaveAnnouncement"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"/>
+        app:layout_constraintHorizontal_bias="0.5"
+        android:backgroundTint="@color/gray"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

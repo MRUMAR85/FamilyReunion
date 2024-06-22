@@ -71,7 +71,7 @@
                 android:id="@+id/button2"
                 android:layout_width="40dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="14dp"
+                android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
@@ -87,7 +87,7 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="36dp"
                 android:layout_weight="1"
                 android:background="@drawable/round_corner_button"
                 android:drawableLeft="@drawable/img_4"
@@ -101,6 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20sp"
+            android:textColor="@color/gray"
             android:text="@string/textview" />
 
 

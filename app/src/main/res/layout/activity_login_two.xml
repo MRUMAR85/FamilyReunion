@@ -18,9 +18,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.982"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="ExtraText,MissingConstraints,TextSizeCheck">
 
         /
@@ -72,8 +73,8 @@
 
         <EditText
             android:id="@+id/input_field1"
-            android:layout_width="358dp"
-            android:layout_height="51dp"
+            android:layout_width="338dp"
+            android:layout_height="48dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/black_border_button"
             android:hint="@string/enter"
@@ -128,7 +129,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="76dp"
+            android:layout_marginTop="60dp"
             android:text="@string/textview"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -136,14 +137,14 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.571" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="153dp"
             android:layout_height="51dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="26dp"
             android:layout_weight="1"
 
             android:background="@drawable/round_corner_button"
@@ -174,8 +175,8 @@
             android:id="@+id/button3"
             android:layout_width="147dp"
             android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:background="@drawable/round_corner_button"
             android:contentDescription="@string/todo"
