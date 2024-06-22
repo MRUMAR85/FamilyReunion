@@ -17,12 +17,13 @@ class EventFragment : Fragment() {
     private lateinit var rvUpcomingEvents: RecyclerView
     private lateinit var btnCreateEvent: Button
     private lateinit var eventAdapter: EventAdapter
-    private val eventViewModel: EventViewModel by viewModels {
-        EventViewModelFactory(EventDatabase.getDatabase(requireContext()))
-    }
+    private lateinit var val viewModel: EventViewModel
 
-    private fun viewModels(function: () -> EventViewModelFactory): ReadOnlyProperty<EventFragment, EventViewModel> {
-        TODO("Not yet implemented")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        viewModel = ViewModelProvider(this)[EventViewModel::class.java]
+
     }
 
     override fun onCreateView(
@@ -31,13 +32,29 @@ class EventFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_event, container, false)
 
+
+        // Set click listener for the button
+        btnCreateEvent.setOnClickListener {
+            // Handle create event button click
+        }
+
+        return view
+    }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+
         rvUpcomingEvents = view.findViewById(R.id.rvUpcomingEvents)
         btnCreateEvent = view.findViewById(R.id.btnCreateEvent)
 
         // Set up RecyclerView
-        rvUpcomingEvents.layoutManager = LinearLayoutManager(context)
         eventAdapter = EventAdapter(emptyList()) // Initialize with an empty list
         rvUpcomingEvents.adapter = eventAdapter
+
+        rvUpcomingEvents.layoutManager = LinearLayoutManager(context)
+
 
         // Observe the event list from the ViewModel
         eventViewModel.eventList.observe(viewLifecycleOwner, Observer { events ->
@@ -46,11 +63,5 @@ class EventFragment : Fragment() {
             }
         })
 
-        // Set click listener for the button
-        btnCreateEvent.setOnClickListener {
-            // Handle create event button click
-        }
-
-        return view
     }
 }

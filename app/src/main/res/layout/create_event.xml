@@ -13,7 +13,7 @@
 
         <!-- Event Name Input -->
         <EditText
-            android:id="@+id/eventName"
+            android:id="@+id/etEventName"
             android:layout_width="367dp"
             android:layout_height="74dp"
             android:layout_marginBottom="16dp"
@@ -25,7 +25,7 @@
 
         <!-- Event Description Input -->
         <EditText
-            android:id="@+id/eventDescription"
+            android:id="@+id/etEventDescription"
             android:layout_width="379dp"
             android:layout_height="135dp"
             android:layout_below="@id/eventName"
@@ -48,7 +48,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/startDate"
+                android:id="@+id/etEventStartDate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -61,7 +61,7 @@
                 tools:ignore="VisualLintTextFieldSize" />
 
             <EditText
-                android:id="@+id/endDate"
+                android:id="@+id/etEventEndDate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -86,7 +86,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/startTime"
+                android:id="@+id/etEventStartTime"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -99,7 +99,7 @@
                 tools:ignore="VisualLintTextFieldSize" />
 
             <EditText
-                android:id="@+id/endTime"
+                android:id="@+id/etEventEndTime"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -132,7 +132,7 @@
 
         <!-- Add Images Button -->
         <Button
-            android:id="@+id/addImages"
+            android:id="@+id/etEventAddImages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/location"
@@ -147,12 +147,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/addImages"
-
             android:layout_marginTop="80dp"
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/saveButton"
+                android:id="@+id/btnEventSaveButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -163,7 +162,7 @@
                 tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
             <Button
-                android:id="@+id/discardButton"
+                android:id="@+id/btnEventDiscardButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
