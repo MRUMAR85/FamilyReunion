@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background circle -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#E0E0E0"/>
+        </shape>
+    </item>
+
+    <!-- Placeholder icon -->
+    <item android:gravity="center">
+        <bitmap
+            android:src="@android:drawable/ic_menu_gallery"
+            android:tint="#9E9E9E" />
+    </item>
+
+</layer-list>

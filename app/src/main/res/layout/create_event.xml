@@ -13,7 +13,7 @@
 
         <!-- Event Name Input -->
         <EditText
-            android:id="@+id/etEventName"
+            android:id="@+id/eventName"
             android:layout_width="367dp"
             android:layout_height="74dp"
             android:layout_marginBottom="16dp"
@@ -25,7 +25,7 @@
 
         <!-- Event Description Input -->
         <EditText
-            android:id="@+id/etEventDescription"
+            android:id="@+id/eventDescription"
             android:layout_width="379dp"
             android:layout_height="135dp"
             android:layout_below="@id/eventName"
@@ -132,7 +132,7 @@
 
         <!-- Add Images Button -->
         <Button
-            android:id="@+id/etEventAddImages"
+            android:id="@+id/addImages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/location"

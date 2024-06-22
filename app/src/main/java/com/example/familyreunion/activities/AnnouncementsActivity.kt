@@ -35,5 +35,8 @@ class AnnouncementsActivity : AppCompatActivity() {
         binding.btn.setOnClickListener {
             startActivity(Intent(this, AddAnnouncementActivity::class.java))
         }
+      /*  binding.tvAnnouncements.setOnClickListener {
+            startActivity(Intent(this, HomeActivity::class.java))
+        }*/
     }
 }

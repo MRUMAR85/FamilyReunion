@@ -1,6 +1,9 @@
 package com.example.familyreunion.roomdb
 
 import android.content.Context
+import androidx.room.Database
+import androidx.room.Room
+import androidx.room.RoomDatabase
 
 @Database(entities = [Announcement::class, Event::class], version = 1, exportSchema = false)
 abstract class MainAppDB : RoomDatabase() {

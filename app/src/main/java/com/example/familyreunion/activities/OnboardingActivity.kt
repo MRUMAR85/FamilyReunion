@@ -20,6 +20,7 @@ class OnboardingActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val onboardingLayouts = listOf(
+
             R.layout.activity_splash_three,
             R.layout.activity_splash_four,
             R.layout.activity_splash_five,

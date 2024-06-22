@@ -13,13 +13,12 @@ class LoginTwoActivity : AppCompatActivity() {
         binding = ActivityLoginTwoBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.textView4.setOnClickListener {
-            startActivity(Intent(this, SignUpActivity::class.java))
+            startActivity(Intent(this, SignUpActivity::class.java))}
             binding.button.setOnClickListener {
-                startActivity(Intent(this, HomeActivity::class.java))
+                startActivity(Intent(this, HomeActivity::class.java))}
                 binding.textView9.setOnClickListener {
                     startActivity(Intent(this, ForgetPasswordActivity::class.java))
                 }
-            }
+
         }
     }
-}

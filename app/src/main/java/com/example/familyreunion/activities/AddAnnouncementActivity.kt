@@ -1,5 +1,6 @@
 package com.example.familyreunion.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -24,7 +25,7 @@ class AddAnnouncementActivity : AppCompatActivity() {
 
             val dataObject = Announcement(0,title,description,"null","null")
             viewModel.insertAnnouncement(dataObject)
-
+            startActivity(Intent(this, HomeActivity::class.java))
         }
 
         findViewById<Button>(R.id.btnDiscardAnnouncement).setOnClickListener {

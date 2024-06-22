@@ -1,5 +1,6 @@
 package com.example.familyreunion.activities
 
+import EventFragment
 import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -12,8 +13,8 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.example.familyreunion.R
 import com.example.familyreunion.databinding.ActivityHomeBinding
+import com.example.familyreunion.fragment.AccountFragment
 import com.example.familyreunion.fragment.HomeFragment
-import com.example.familyreunion.fragment.EventFragment
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class HomeActivity : AppCompatActivity() {
@@ -46,9 +47,9 @@ class HomeActivity : AppCompatActivity() {
             val frag = when(it.itemId){
                 R.id.bottomNavHome -> HomeFragment()
                 R.id.bottomNavEvent -> EventFragment()
-                /*  R.id.bottomNavTransactions -> TransactionFragment()
-                  R.id.bottomNavBudget -> BudgetFragment()
-                  R.id.bottomNavProfile -> ProfileFragment()*/
+                 R.id.bottomNavProfile -> AccountFragment()
+                /*    R.id.bottomNavBudget -> BudgetFragment()
+                   R.id.bottomNavProfile -> ProfileFragment()*/
                 else -> HomeFragment()
             }
 
@@ -76,7 +77,7 @@ class HomeActivity : AppCompatActivity() {
         val options = arrayOf("Add Announcement", "Add New Event")
         AlertDialog.Builder(this)
             .setTitle("Choose an action")
-            .setItems(options) { dialog, which ->
+            .setItems(options) { _, which ->
                 when (which) {
                     0 -> addAnnouncement()
                     1 -> addNewEvent()

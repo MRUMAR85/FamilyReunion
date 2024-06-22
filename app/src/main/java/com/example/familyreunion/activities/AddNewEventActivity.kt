@@ -4,8 +4,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.example.familyreunion.R
-import com.example.familyreunion.model.AnnouncementViewModel
 import com.example.familyreunion.roomdb.Event
 import com.example.familyreunion.viewmodel.EventViewModel
 
@@ -19,9 +19,9 @@ class AddNewEventActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)[EventViewModel::class.java]
 
         // Set up your save and discard buttons
-        findViewById<Button>(R.id.saveButton).setOnClickListener {
+        findViewById<Button>(R.id.btnEventSaveButton).setOnClickListener {
 
-            val eName = findViewById<EditText>(R.id.etEventName).text.toString()
+            val eName = findViewById<EditText>(R.id.eventName).text.toString()
             // find, getText and store other properties as well for event
 
             val event = Event(0, eName, "description", "startDate", "EndDate", "StartTime", "EndTIme", "Location")
@@ -34,7 +34,7 @@ class AddNewEventActivity : AppCompatActivity() {
             // Add your save logic here
         }
 
-        findViewById<Button>(R.id.discardButton).setOnClickListener {
+        findViewById<Button>(R.id.btnEventDiscardButton).setOnClickListener {
             // Discard and close the activity
             finish()
         }
