@@ -1,8 +1,8 @@
 package com.example.familyreunion.splash
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.familyreunion.databinding.ActivitySplashFourBinding
 
 class SplashFourActivity : AppCompatActivity() {
@@ -11,7 +11,7 @@ class SplashFourActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashFourBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.imageView3.setOnClickListener {
+        binding.textView1.setOnClickListener {
             startActivity(Intent(this, SplashFiveActivity::class.java))        }
     }
 }
